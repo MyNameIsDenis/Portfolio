@@ -4,6 +4,12 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+body::before {
+    content: "";
+    display: block;
+    height: 60px;
+}
+
 header {
     width: 100%;
     height: 60px;
@@ -13,14 +19,15 @@ header {
     color: white;
     display: flex;
     justify-content: space-evenly;
+    top: 0;
 }
 
-.left {
+.header_left {
     width: 30%;
     padding: 10px;
 }
 
-.right {
+.header_right {
     width: 70%;
     margin-top: 10px;
     display: flex;
@@ -55,13 +62,36 @@ a:hover::before {
 header.active {
     background: rgba(0, 0, 0, 0.600);
     padding: 5px 0;
+    z-index: 1000;
 }
 
 main {
     background: lightgreen;
     height: 1000px;
 }
-p{
-    font-size: 150px;
-    text-align: center;
+
+.home {
+    height: 645px;
+    background: red;
+}
+
+.about {
+    height: 645px;
+    background: green;
+}
+
+.tchnlgs {
+    height: 645px;
+    background: blue;
+}
+
+footer {
+    height: 100px;
+    background: #343434;
+    color: white;
+}
+
+.footer_right {
+    display: flex;
+    justify-content: flex-end;
 }
