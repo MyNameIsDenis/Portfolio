@@ -32,7 +32,7 @@ header {
     margin-top: 10px;
     display: flex;
     justify-content: flex-end;
-    
+
 }
 
 .a {
@@ -65,24 +65,37 @@ header.active {
     z-index: 1000;
 }
 
-main {
-    background: lightgreen;
-    height: 1000px;
+.img1, .img2 {
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.img1 {
+    background-image: url('../img/img1.jpg');
+    height: 500px;
+}
+
+.img2 {
+    background-image: url('../img/img2.jpg');
+    height: 500px;
 }
 
 .home {
     height: 645px;
-    background: red;
+    background: #63615d;
 }
 
 .about {
     height: 645px;
-    background: green;
+    background: #63615d;
 }
 
 .tchnlgs {
     height: 645px;
-    background: blue;
+    background: #63615d;
 }
 
 footer {
@@ -93,9 +106,16 @@ footer {
 
 .footer_right {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-evenly;
 }
 
-.footer_right a{
-   margin-right: 20px;
+.footer_right a {
+    margin-right: 30px;
+ 
+}
+
+.footer_bottom {
+    text-align: center;
+    font-size: 11px;
+    margin-top: 20px;
 }
